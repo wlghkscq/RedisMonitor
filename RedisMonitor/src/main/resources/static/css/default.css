@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* webfont */
+/* Nanum Gothic */
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/NanumGothic-Regular.eot);/* IE9 Compat Modes */
+	src: url(../font/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),/* IE6-IE8 */
+		 url(../font/NanumGothic-Regular.woff2) format('woff2'),/* Modern Browsers */
+		 url(../font/NanumGothic-Regular.woff) format('woff'),
+		 url(../font/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../font/NanumGothic-Bold.eot);
+	src: url(../font/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+		 url(../font/NanumGothic-Bold.woff2) format('woff2'),
+		 url(../font/NanumGothic-Bold.woff) format('woff'),
+		 url(../font/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic Ext';
+	font-style: normal;
+	font-weight: 800;
+	src: url(../font/NanumGothic-ExtraBold.eot);
+	src: url(../font/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+		 url(../font/NanumGothic-ExtraBold.woff2) format('woff2'),
+		 url(../font/NanumGothic-ExtraBold.woff) format('woff'),
+		 url(../font/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+/* base */
+html {height:100%;font-size:12px;font-size:0.75em;}
+body {margin:0;padding:0;height:100%; font-size:1em;line-height:1.5;color:#666;font-family:'Nanum Gothic','돋움',Dotum,Verdana,Tahoma,sans-serif;}
+h1, h2, h3, h4, h5, h6, input, button, textarea, select {font-family:'Nanum Gothic','돋움',Dotum,Verdana,Tahoma,sans-serif;}
+
+img {border:0 none;vertical-align:top;}
+strong {font-weight:700;}
+h1, h2, h3, h4, h5, h6 {margin:0;font-size:1em;}
+address, em, cite {font-style:normal;}
+p, blockquote {margin:0;}
+hr {display:none;}
+mark {background:none;}
+
+/* table */
+table {border-collapse:collapse;border-spacing:0;}
+caption {padding:0;width:0;height:0;overflow:hidden;visibility:hidden;font-size:0;line-height:0;}
+th, td {padding:0;vertical-align:top;text-align:left;}
+
+/* list */
+dd, dl, ol, ul {margin:0;padding:0;}
+li {list-style-type:none;}
+
+/* form */
+form {margin:0;padding:0;}
+fieldset {margin:0;padding:0;border:none;}
+legend {position:absolute;top:-50px;left:-50px;width:0;height:0;overflow:hidden;visibility:hidden;font-size:0;line-height:0;padding:0;}
+input, select {font-size:12px;line-height:1;vertical-align:top;padding:0px;margin:0px;color:#666;}
+textarea {font-size:1em;vertical-align:top;padding:10px;margin:0;color:#666;}
+label, button {cursor:pointer;}
+button {overflow:visible;margin:0;padding:0;border:none;background:none;vertical-align:top;cursor:pointer;}
+button::-moz-focus-inner {border:0;padding:0;}
+
+/* link */
+a {text-decoration:none;cursor:pointer;}
+a:link {color:#666;}
+a:visited {color:#666;}
+a:hover {color:#666;}
+a:active {color:#666;}
+
+/* basic */
+.hidden-obj {display:none;}
+.hd {position:absolute !important;left:-9000px !important;}
+.text-l {text-align:left !important;}
+
+.loginuserInfo{
+	float: right;
+    padding: 10px;
+    padding-right: 11%;
+    
+}
+
+.loginuserInfo strong{
+	position: absolute;
+	top: 9px;
+    right: 168px;
+	font-size: 11px;
+    background: white;
+    border-radius: 0.2rem;
+    padding: 3px;
+    min-width: 100px;
+    text-align: -webkit-right;
+}
+
+.main-log{
+    display: block;
+    padding: 0 0px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+

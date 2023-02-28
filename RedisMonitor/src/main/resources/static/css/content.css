@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* wrapper ********************************************/
+#wrapper {width:100%;min-width:1200px;height:807px;}
+
+/* header *********************************************/
+#header {position:relative;}
+/* 타이틀 */
+#header h1 {position:absolute;right:30px;top:13px;}
+
+
+/*메인배너 LOCA 아이콘*/
+.loca-main-banner{padding-left: 100px;padding-top: 20px;}
+
+
+/* 탭메뉴 top */
+.tab-menu-top {height:90px;border-bottom:1px solid #3D3935;background:#3D3935;}
+.tab-menu-top li {float:left;}
+.tab-menu-top li a {display:block;padding:0 40px;height:39px;line-height:39px;font-size:15px;color:#FFFFFF;font-weight:700;}
+.tab-menu-top li.on a {border-bottom:1px solid #cb1920;background:#e21c24;color:#fff;}
+
+/* 탭메뉴 아이콘*/
+.menu-icon-monitor { padding-left: 41px; padding-top: 5px; width: 95px;}
+.menu-icon-statics { padding-left: 30px; padding-top: 5px; width: 57px;}
+.menu-icon-form { padding-left: 42px; padding-top: 5px; width: 90px;}
+.menu-icon-manage { padding-left: 27px; padding-top: 5px; width: 57px; padding-right: 40px;}
+
+
+/* 탭메뉴 */
+.tab-menu {height:90px;border-bottom:1px solid #6F6259;background:#6F6259; padding-right: 140px;}
+.tab-menu li {float:right;}
+.tab-menu li a {display:block;height:39px;line-height:39px;font-size:15px;color:#FFFFFF;font-weight:700;}
+.tab-menu li.on a {color:#FEEF02;}
+
+/* 탭메뉴 원복
+.tab-menu {height:39px;border-bottom:1px solid #b9b9b9;background:#cecece;}
+.tab-menu li {float:left;}
+.tab-menu li a {display:block;padding:0 40px;height:39px;line-height:39px;font-size:15px;color:#555;font-weight:700;}
+.tab-menu li.on a {border-bottom:1px solid #cb1920;background:#e21c24;color:#fff;}
+*/
+
+/* 로그아웃 */
+.logout {position:absolute;right:30px;top:8px;}
+.logout a:before {display:inline-block;margin-top:5px;margin-right:3px;width:12px;height:11px;background:#666 url(../images/icon_logout.png) no-repeat;vertical-align:top;content:'';}
+.logout a {display:block;padding:0 7px;height:21px;line-height:19px;border:1px solid #9f9f9f;background:#fff;color:#444;}
+.logout a:hover:before, .logout a:active:before {background-color:#e21c24;}
+.logout a:hover, .logout a:active {border-color:#e21c24;color:#e21c24;}
+
+/* 사용자수정 */
+.userModify {position:absolute;right:106px;top:8px;}
+.userModify a {display:block;padding:0 7px;height:21px;line-height:19px;border:1px solid #9f9f9f;background:#fff;color:#444;}
+.userModify a:hover:before, .logout a:active:before {background-color:#0000ff;}
+.userModify a:hover, .logout a:active {border-color:#0000ff;color:#0000ff;}
+
+/* container ******************************************/
+#container {overflow:auto;margin:0 auto;padding:30px;width:1140px;}
+/* 통계 ********************/
+/* 검색 */
+.search {overflow:auto;padding:10px 20px 5px;border-top:1px solid #9f9f9f;border-bottom:1px solid #9f9f9f;background:#F6F2F0;}
+.search .item-area {float:left;width:calc(100% - 80px);}
+.search .item-area li {float:left;padding-right:20px;padding-bottom:5px;height:23px;line-height:22px;}
+
+.search .item-area li label {padding-right:10px;color:#333;}
+.search .item-area li input {padding:0 5px;height:21px;border:1px solid #9f9f9f;}
+.search .item-area li input[type=text]::-ms-clear{display:none;}/* input X버튼 제거 */
+.search .item-area li select {padding-left:2px;height:23px;border:1px solid #9f9f9f;}
+.search .item-area li input[disabled], .search .item-area li select[disabled] {background:#efefef;}/* input 비활성화 */
+.search .item-area li .date, .search .item-area li .time {position:relative;}
+.search .item-area li .date .calendar {position:absolute;right:4px;top:-1px;}
+.search .item-area li .time {margin-left:5px;}
+.search .item-area li .time .up, .search .item-area li .time .down {position:absolute;right:2px;top:-3px;}
+.search .item-area li .time .down {top:7px;}
+.search .btn-area {float:right;width:80px;}
+.search .btn-area a {display:block;height:51px;line-height:51px;background:#6F6259;font-size:15px;color:#fff;font-weight:700;text-align:center;}
+.search .btn-area a:hover, .search .btn-area a:active, .search .btn-area a:focus {background:#e21c24;}
+.search .icon-area {float:right;width:80px;padding-top:8px;}
+.search .icon-area a {margin-right:7px;}
+.search .icon-area a:last-child {margin-right:0;}
+/* 검색결과 */
+.search-list {overflow:auto;max-height:571px;border-top:1px solid #9f9f9f;border-bottom:1px solid #9f9f9f;}
+.search-list .tbl-type {width:100%;letter-spacing:-1px;box-sizing:border-box;border-bottom: 1px solid #9f9f9f;}
+.search-list .tbl-type th, .search-list .tbl-type td {padding:8px 5px;border-right:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;text-align:center;vertical-align:middle;}
+.search-list .tbl-type thead th {border-bottom-color:#6F6259;background:#F6F2F0;color:#333;}
+.search-list .tbl-type th:last-child, .search-list .tbl-type td:last-child {border-right:0 none;}
+.search-list .tbl-type tbody tr:last-child th, .search-list .tbl-type tbody tr:last-child td,
+.search-list .tbl-type tbody tr.last-rows th, .search-list .tbl-type tbody tr.last-rows td:nth-child(2) {border-bottom:0 none;}/* 마지막 리스트 라인/마지막 리스트 rowspan th, 두번째 td 라인 제거 */
+/* 가이드 */
+.guide {padding-top:13px;height:20px;text-align:right;}
+/* 모니터 ******************/
+.box {float:left;width:558px;height:705px;border:1px solid #9f9f9f;}
+.box:last-child {float:right;}
+.box h2 {height:35px;line-height:35px;border-bottom:1px solid #9f9f9f;background:#f6f6f6;font-size:14px;color:#333;text-align:center;}
+.box h2 strong {padding-left:5px;color:#1ab394;}
+.box .cont {float:left;margin:20px;padding:5px 0;width:247px;border:1px solid #9f9f9f;border-top-width:2px;border-bottom-width:2px;background:#cecece;}
+.box .cont:last-child {float:right;margin-left:0;}
+.box .cont li {padding:0 5px 3px;height:17px;}
+.box .cont li:nth-child(10), .box .cont li:nth-child(20) {padding-bottom:5px;border-bottom:2px solid #9f9f9f;}
+.box .cont li:nth-child(11), .box .cont li:nth-child(21) {padding-top:5px;}
+.box .cont li:last-child {padding-bottom:0;}
+.box .cont li:after {display:inline-block;margin-left:5px;width:13px;height:15px;border:1px solid #7c7c7c;background:#9c9c9c;vertical-align:top;content:'';}
+.box .cont li span {display:inline-block;width:215px;height:15px;border:1px solid #7c7c7c;background:#fff;font-size:10px;vertical-align:top;}
+.box .cont li span strong {display:inline-block;margin-right:5px;width:16px;height:15px;line-height:15px;border-right:1px solid #7c7c7c;background:#e7e7e7;font-size:8px;color:#333;text-align:center;vertical-align:top;}
+.box .cont li.on span {border-color:#419d8a;background:#c8ede5;}
+.box .cont li.on span strong {border-color:#419d8a;background:#bee3dc;}
+/* 관리 ******************/
+.btn-area .insert {float:right;width:60px; padding: 10px;}
+.btn-area .insert a {display:block;height:30px;line-height:30px;background:#4374D9;font-size:11px;color:#fff;font-weight:700;text-align:center;}
+.btn-area .insert a:hover, .btn-area .insert a:active, .btn-area .insert a:focus {background:#0054FF;}
+.btn-area .delete {float:right;width:60px; padding: 10px;}
+.btn-area .delete a {display:block;height:30px;line-height:30px;background:#F15F5F;font-size:11px;color:#fff;font-weight:700;text-align:center;}
+.btn-area .delete a:hover, .btn-area .delete a:active, .btn-area .delete a:focus {background:red;}
+.update a {display:block;height:30px;line-height:30px;background:#3DB7CC;font-size:11px;color:#fff;font-weight:700;text-align:center;}
+.update a:hover, .update a:active, .update a:focus {background:#008299;}
